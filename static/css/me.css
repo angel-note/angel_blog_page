@@ -3,85 +3,123 @@
 /*--------------------padded-tb: 上下间距的设置----------------------*/
 /*1em = 14px*/
 /* tb: t->表示top。b->表示bottom*/
-.me-padded-mini{
-    padding:0.2em !important;
+.me-padded-mini {
+    padding: 0.2em !important;
 }
-.me-padded-tiny{
-    padding:0.3em !important;
+
+.me-padded-tiny {
+    padding: 0.3em !important;
 }
+
 /*最小小小间距*/
 .me-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
 }
+
 /*小小间距*/
 .me-padded-tb-tiny {
     padding-top: 0.3em !important;
     padding-bottom: 0.3em !important;
 }
+
 /*小间距*/
 .me-padded-tb-small {
     padding-top: 0.5em !important;
     padding-bottom: 0.5em !important;
 }
+
 /*普通间距 默认间距*/
 .me-padded-tb {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
+
 /*大间距*/
 .me-padded-tb-large {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
 }
+
 /*大大间距*/
 .me-padded-tb-big {
     padding-top: 3em !important;
     padding-bottom: 3em !important;
 }
+
 /*最大大间距*/
 .me-padded-tb-huge {
     padding-top: 4em !important;
     padding-bottom: 4em !important;
 }
+
 /*最大大大间距*/
 .me-padded-tb-massive {
     padding-top: 5em !important;
     padding-bottom: 5em !important;
 }
 
+/*--------------------margin: 同时设置上下左右外部间距----------------------*/
+/*向上间距的设置*/
+.me-margin-top-small {
+    margin-top: 0.5em !important;
+}
 
+.me-margin-top {
+    margin-top: 1em !important;
+}
 
+.me-margin-top-large {
+    margin-top: 2em !important;
+}
 
+/*向上向下间距的设置*/
+.me-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
 
 
 /*--------------------text: 字体的唯美设置----------------------*/
 .me-text {
-    font-weight: 300 !important;/*字体大小*/
-    letter-spacing: 1px !important;/*字间距*/
-    line-height: 1.8;   /*设置1.8倍的行间距*/
+    font-weight: 300 !important; /*字体大小*/
+    letter-spacing: 1px !important; /*字间距*/
+    line-height: 1.8; /*设置1.8倍的行间距*/
 }
+
 .me-text-thin {
-    font-weight: 300 !important;/*字体大小*/
+    font-weight: 300 !important; /*字体大小*/
 }
+
 .me-text-spaced {
-    letter-spacing: 1px !important;/*字间距*/
+    letter-spacing: 1px !important; /*字间距*/
 }
-.me-text-lined{
-    line-height: 1.8;   /*设置1.8倍的行间距*/
+
+.me-text-lined {
+    line-height: 1.8; /*设置1.8倍的行间距*/
+}
+
+/*--------------------color: 字体颜色设置----------------------*/
+.me-black {
+    color: #333 !important;
 }
 
 
+/*--------------------opacity----------------------*/
 .me-opacity-mini {
-    opacity: 0.8 !important;/*设置字体的透明度-->迷你*/
+    opacity: 0.8 !important; /*设置字体的透明度-->迷你*/
 }
 
 
 /*--------------------display: 显示样式设置----------------------*/
-.me-inline-block{
+.me-inline-block {
     display: inline-block !important;
 }
+
+
+/*--------------------container----------------------*/
 .me-container {
     max-width: 72em !important;
     margin: auto !important; /*水平方向的居中*/
 }
+

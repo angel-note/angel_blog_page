@@ -53,7 +53,7 @@
     <div class="ui container">
         <!-- 采用表格的形式进行左右布局：共16格 -->
         <div class="ui grid">
-            <!-- 左边布局：占11格-->
+            <!-- 左边布局：占11格 博客列表-->
             <div class="eleven wide column">
                 <!-- 文章列表的头部-->
                 <!-- attached : 附加的意思，表示会连接设置 attached 的div,连接在一起 -->
@@ -164,6 +164,92 @@
                             </div>
                         </div>
                     </div>
+                    <div class="ui padded segment me-padded-tb-large">
+                        <div class="ui grid">
+                            <!-- 左边显示文章内容 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
+                                <p class="me-text">
+                                    正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过。只是大家都那么做而已...... </p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <!-- horizontal:表示横着的list条目，默认是竖着的条目 -->
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!-- avatar : 表示的是一张圆形的小的一张图 -->
+                                                <img src="https://picsum.photos/id/0/100/100" alt=""
+                                                     class="ui avatar image">
+                                                <!-- content: 在图片后面添加文字，就需要用到这个属性 -->
+                                                <div class="content"><a href="#" class="header">周伟国</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2019-09-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 343
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic label me-padded-tiny me-text-thin">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右边放图片的形式 -->
+                            <div class="five wide column">
+                                <!-- target="_blank" : 表示点击新打开一个页面-->
+                                <a href="#" target="_blank">
+                                    <!-- rounded : 指的是圆角的图片 -->
+                                    <img src="https://picsum.photos/id/0/800/700" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded segment me-padded-tb-large">
+                        <div class="ui grid">
+                            <!-- 左边显示文章内容 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
+                                <p class="me-text">
+                                    正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过。只是大家都那么做而已...... </p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <!-- horizontal:表示横着的list条目，默认是竖着的条目 -->
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!-- avatar : 表示的是一张圆形的小的一张图 -->
+                                                <img src="https://picsum.photos/id/0/100/100" alt=""
+                                                     class="ui avatar image">
+                                                <!-- content: 在图片后面添加文字，就需要用到这个属性 -->
+                                                <div class="content"><a href="#" class="header">周伟国</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2019-09-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 343
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic label me-padded-tiny me-text-thin">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右边放图片的形式 -->
+                            <div class="five wide column">
+                                <!-- target="_blank" : 表示点击新打开一个页面-->
+                                <a href="#" target="_blank">
+                                    <!-- rounded : 指的是圆角的图片 -->
+                                    <img src="https://picsum.photos/id/0/800/700" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- 分页 footer  -->
                 <div class="ui bottom attached segment">
@@ -178,14 +264,90 @@
                 </div>
             </div>
 
-            <!-- 右边 -->
+            <!-- 右边布局：占5格 右边top-->
             <div class="five wide column">
-                <div class="ui segment"></div>
+                <!-- 第一块：分类-->
+                <!-- segments:共有2个segment，所以用一个segments进行包裹 -->
+                <div class="ui segments">
+                    <!-- 第一个segments： -->
+                    <!-- secondary: 指的是该segment顶部设置为灰色-->
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column"><i class="idea icon"></i>分类</div>
+                            <!-- angle double right: 这个图标不是在semantic查找的，是在https://fontawesome.com/icons?d=gallery&q=angle 连接下搜索的 -->
+                            <div class="right aligned column"><a href="#" target="_blank">more <i class="angle double right icon"></i></a></div>
+                        </div>
+                    </div>
+                    <!-- 第二个segments： -->
+                    <div class="ui teal segment">
+                        <!-- fluid : 填充它的外层容器 -->
+                        <div class="ui fluid vertical menu">
+                            <a href="#" class="item">学习日志
+                                <!--
+                                item 后面的文字都会设置在右边
+                                teal basic : 基本颜色
+                                left pointing : 向左的小三角
+                                -->
+                                <div class="ui teal basic left pointing label">13</div>
+                            </a>
+                            <a href="#" class="item">思考与感悟
+                                <div class="ui teal basic left pointing label">13</div>
+                            </a>
+                            <a href="#" class="item">清单
+                                <div class="ui teal basic left pointing label">13</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二块：标签 -->
+                <div class="ui segments me-margin-top-large">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column"><i class="tags icon"></i>标签</div>
+                            <div class="right aligned column"><a href="#" target="_blank">more <i class="angle double right icon"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <a href="#" class="ui teal basic left pointing label me-margin-tb-tiny">论 <div class="detail">15</div></a>
+                        <a href="#" class="ui teal basic left pointing label me-margin-tb-tiny">法论 <div class="detail">15</div></a>
+                        <a href="#" class="ui teal basic left pointing label me-margin-tb-tiny">方法论 <div class="detail">15</div></a>
+                        <a href="#" class="ui teal basic left pointing label me-margin-tb-tiny">方法论 <div class="detail">15</div></a>
+                        <a href="#" class="ui teal basic left pointing label me-margin-tb-tiny">刻意练习 <div class="detail">20</div></a>
+                    </div>
+                </div>
+
+                <!-- 第三块：最新推荐-->
+                <div class="ui segments me-margin-top-large">
+                    <div class="ui secondary segment">
+                        <div class="column"><i class="bookmark icon"></i>最新推荐</div>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="me-black me-text-thin">用户故事(Users Story)</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="me-black me-text-thin">用户故事(Users Story)</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="me-black me-text-thin">用户故事(Users Story)</a>
+                    </div>
+                </div>
+
+                <!-- 第四块：二维码-->
+                <!-- horizontal divider : 水平分隔线-->
+                <h4 class="ui horizontal divider header me-margin-top-large">扫码关注我</h4>
+                <!--
+                    card : 用于存放卡片形式的内容
+                    centered : 表示该容器居中
+                -->
+                <div class="ui centered card" style="width: 11em;">
+                    <img src="./static/images/wechat.jpeg" alt="" class="ui rounded image">
+                </div>
             </div>
         </div>
     </div>
 </div>
-
+<br/>
 <!-- 底部footer -->
 <!--
     vertical : 表示垂直的形式，不是圆角
@@ -215,8 +377,8 @@
                 <h4 class="ui inverted header me-text-thin me-text-spaced">最新博客</h4>
                 <div class="ui inverted link list">
                     <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">练习清单</a>
+                    <a href="#" class="item">失败要趁早</a>
                 </div>
             </div>
             <div class="three wide column">
