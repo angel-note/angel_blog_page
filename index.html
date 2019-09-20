@@ -21,8 +21,9 @@
         <!-- 制作导航组件-->
         <!--
             secondary : 去除下面设置的灰色竖线
+            stackable : 表示移动端自适应，表示屏幕小的时候，可堆叠
         -->
-        <div class="ui inverted secondary menu">
+        <div class="ui inverted secondary stackable menu">
             <!-- 制作标题 -->
             <!--
                 teal : 表示设置颜色为抹茶绿色
@@ -52,7 +53,8 @@
     <!-- container : 这个容器是semantic响应式布局，根据不同的页面尺寸达到自适应的显示空间效果，最好用它来包裹一些元素。 -->
     <div class="ui container">
         <!-- 采用表格的形式进行左右布局：共16格 -->
-        <div class="ui grid">
+        <!-- stackable : 移动端自适应，表示在屏幕小的时候，可实现堆叠-->
+        <div class="ui stackable grid">
             <!-- 左边布局：占11格 博客列表-->
             <div class="eleven wide column">
                 <!-- 文章列表的头部-->
@@ -79,7 +81,9 @@
                     <!-- padded : 调整内部边距 -->
                     <!-- vertical : 表示可以垂直居中，可以达有显示横向分隔线的作用 (这里省略了) -->
                     <div class="ui padded segment me-padded-tb-large">
-                        <div class="ui grid">
+                        <!-- mobile reversed : 在手机移动端的时候，可以让文字和图片进行反转(就是两个column进行反序的调换)-->
+                        <!-- stackable : 表示在屏幕小的时候，可实现堆叠-->
+                        <div class="ui mobile reversed stackable grid">
                             <!-- 左边显示文章内容 -->
                             <div class="eleven wide column">
                                 <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
@@ -122,7 +126,9 @@
                         </div>
                     </div>
                     <div class="ui padded segment me-padded-tb-large">
-                        <div class="ui grid">
+                        <!-- mobile reversed : 在手机移动端的时候，可以让文字和图片进行反转(就是两个column进行反序的调换)-->
+                        <!-- stackable : 表示在屏幕小的时候，可实现堆叠-->
+                        <div class="ui mobile reversed stackable grid">
                             <!-- 左边显示文章内容 -->
                             <div class="eleven wide column">
                                 <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
@@ -165,7 +171,9 @@
                         </div>
                     </div>
                     <div class="ui padded segment me-padded-tb-large">
-                        <div class="ui grid">
+                        <!-- mobile reversed : 在手机移动端的时候，可以让文字和图片进行反转(就是两个column进行反序的调换)-->
+                        <!-- stackable : 表示在屏幕小的时候，可实现堆叠-->
+                        <div class="ui mobile reversed stackable grid">
                             <!-- 左边显示文章内容 -->
                             <div class="eleven wide column">
                                 <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
@@ -208,7 +216,9 @@
                         </div>
                     </div>
                     <div class="ui padded segment me-padded-tb-large">
-                        <div class="ui grid">
+                        <!-- mobile reversed : 在手机移动端的时候，可以让文字和图片进行反转(就是两个column进行反序的调换)-->
+                        <!-- stackable : 表示在屏幕小的时候，可实现堆叠-->
+                        <div class="ui mobile reversed stackable grid">
                             <!-- 左边显示文章内容 -->
                             <div class="eleven wide column">
                                 <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
@@ -357,7 +367,7 @@
     <div class="ui center aligned container">
         <!-- BootStrap的表格是以12格的形式，而semantic是16格布局-->
         <!-- divided : 表示竖线分隔线-->
-        <div class="ui inverted divided grid">
+        <div class="ui inverted divided stackable grid">
             <!--
                 three: 表示这个Div占3格
                 wide:表示填满
