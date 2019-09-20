@@ -1,0 +1,34 @@
+/**自定义的CSS样式*/
+
+/*--------------------padded-tb: 上下间距的设置----------------------*/
+/*1em = 14px*/
+/* tb: t->表示top。b->表示bottom*/
+/*最小小小间距*/
+.me-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+/*最大大大间距*/
+.me-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+
+
+
+
+
+/*--------------------text: 字体的唯美设置----------------------*/
+.me-text-thin {
+    font-weight: 300 !important;/*字体大小*/
+}
+.me-text-spaced {
+    letter-spacing: 1px !important;/*字间距*/
+}
+.me-text-lined{
+    line-height: 1.8;   /*设置1.8倍的行间距*/
+}
+.me-opacity-mini {
+    opacity: 0.8 !important;/*设置字体的透明度-->迷你*/
+}
