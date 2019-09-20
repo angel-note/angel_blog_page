@@ -48,28 +48,142 @@
 </nav>
 
 <!-- 中间内容 -->
-<div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<div class="me-container me-padded-tb-large">
+    <!-- container : 这个容器是semantic响应式布局，根据不同的页面尺寸达到自适应的显示空间效果，最好用它来包裹一些元素。 -->
+    <div class="ui container">
+        <!-- 采用表格的形式进行左右布局：共16格 -->
+        <div class="ui grid">
+            <!-- 左边布局：占11格-->
+            <div class="eleven wide column">
+                <!-- 文章列表的头部-->
+                <!-- attached : 附加的意思，表示会连接设置 attached 的div,连接在一起 -->
+                <div class="ui attached segment">
+                    <!-- middle aligned: 表示垂直方向的居中 -->
+                    <!-- two column : 两列的一个布局-->
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">博客</h3>
+                        </div>
+                        <!-- right aligned : 右边对齐 -->
+                        <div class="right aligned column">
+                            <!-- h1,h2,h3...h6: 默认是一个block元素 -->
+                            <!-- 那么这里不需要这种block元素，所以需要设置行内样式(自定义样式) m-inline-blok -->
+                            共 <h2 class="ui orange header me-inline-block me-text-thin">14</h2> 篇
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 正文内容的列表设置 -->
+                <!-- attached : 附加的意思，表示会连接设置 attached 的div,连接在一起 -->
+                <div class="ui attached segment">
+                    <!-- padded : 调整内部边距 -->
+                    <!-- vertical : 表示可以垂直居中，可以达有显示横向分隔线的作用 (这里省略了) -->
+                    <div class="ui padded segment me-padded-tb-large">
+                        <div class="ui grid">
+                            <!-- 左边显示文章内容 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
+                                <p class="me-text">
+                                    正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过。只是大家都那么做而已...... </p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <!-- horizontal:表示横着的list条目，默认是竖着的条目 -->
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!-- avatar : 表示的是一张圆形的小的一张图 -->
+                                                <img src="https://picsum.photos/id/0/100/100" alt=""
+                                                     class="ui avatar image">
+                                                <!-- content: 在图片后面添加文字，就需要用到这个属性 -->
+                                                <div class="content"><a href="#" class="header">周伟国</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2019-09-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 343
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic label me-padded-tiny me-text-thin">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右边放图片的形式 -->
+                            <div class="five wide column">
+                                <!-- target="_blank" : 表示点击新打开一个页面-->
+                                <a href="#" target="_blank">
+                                    <!-- rounded : 指的是圆角的图片 -->
+                                    <img src="https://picsum.photos/id/0/800/700" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded segment me-padded-tb-large">
+                        <div class="ui grid">
+                            <!-- 左边显示文章内容 -->
+                            <div class="eleven wide column">
+                                <h3 class="ui header">你真的理解什么是财富自由吗?</h3>
+                                <p class="me-text">
+                                    正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过。只是大家都那么做而已...... </p>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <!-- horizontal:表示横着的list条目，默认是竖着的条目 -->
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <!-- avatar : 表示的是一张圆形的小的一张图 -->
+                                                <img src="https://picsum.photos/id/0/100/100" alt=""
+                                                     class="ui avatar image">
+                                                <!-- content: 在图片后面添加文字，就需要用到这个属性 -->
+                                                <div class="content"><a href="#" class="header">周伟国</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2019-09-20
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> 343
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic label me-padded-tiny me-text-thin">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 右边放图片的形式 -->
+                            <div class="five wide column">
+                                <!-- target="_blank" : 表示点击新打开一个页面-->
+                                <a href="#" target="_blank">
+                                    <!-- rounded : 指的是圆角的图片 -->
+                                    <img src="https://picsum.photos/id/0/800/700" alt="" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分页 footer  -->
+                <div class="ui bottom attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" class="ui mini teal basic button">上一页</a>
+                        </div>
+                        <div class="right aligned column">
+                            <a href="#" class="ui mini teal basic button">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右边 -->
+            <div class="five wide column">
+                <div class="ui segment"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- 底部footer -->
@@ -91,7 +205,8 @@
                 <div class="ui inverted link list">
                     <div class="item">
                         <!-- rounded : 表示圆角显示图片 -->
-                        <img src="./static/images/wechat.jpeg" class="ui rounded image" style="width:110px;" alt="这是一张微信的图片">
+                        <img src="./static/images/wechat.jpeg" class="ui rounded image" style="width:110px;"
+                             alt="这是一张微信的图片">
                     </div>
                 </div>
             </div>
@@ -122,7 +237,8 @@
         <!-- 画底部的线 -->
         <!-- divider : 代表的是分隔线-->
         <div class="ui inverted section divider"></div>
-        <p class="me-text-thin me-text-spaced me-opacity-mini">Copyright&copy; 2019 - 2020 Angel.zhou Designed by Angel.zhou</p>
+        <p class="me-text-thin me-text-spaced me-opacity-mini">Copyright&copy; 2019 - 2020 Angel.zhou Designed by
+            Angel.zhou</p>
     </div>
 </footer>
 
